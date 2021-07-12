@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Gallery</title>
+    <style>
+        img {
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .container .row .img :hover {
+            z-index: 1;
+            transform: scale(1.5);
+            box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+        }
+        
+        body::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            overflow: hidden;
+            opacity: 0.8;
+        }
+        
+        header {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        header ul {
+            display: flex;
+            width: 80%;
+        }
+        
+        header ul li {
+            text-align: center;
+            width: 15%;
+            list-style: none;
+            transition: 0.3s;
+        }
+        
+        header ul li a {
+            opacity: 2;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        
+        header ul li:hover {
+            background-color: rgb(253, 148, 32);
+            border-radius: 25px;
+        }
+        
+        header ul li a:hover {
+            color: beige;
+        }
+        /* @media only screen and (max-width: 700px) {
+            header ul {
+                font-size: 0.5rem;
+            }
+        }
+         */
+        
+        @media only screen and (max-width: 700px) {
+            header ul {
+                flex-direction: column;
+                /* width: 100%; */
+            }
+        }
+        /* speaker */
+    </style>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; background-color: rgb(250, 239, 224);">
+    <header>
+        <h1>Event</h1>
+        <ul>
+            <li><a href="index.html"> Home </a> </li>
+            <li><a href="about/index.html"> About </a> </li>
+            <li><a href="events.html"> Events </a> </li>
+            <li><a href="gallery.html"> Gallery </a> </li>
+            <li><a href="speaker.html"> Speaker </a> </li>
+            <li><a href="contact.html"> Contact </a> </li>
+        </ul>
+    </header>
+    <div class="container">
+        <div style="width: 100%; margin-left: 50%; margin-right: 50%;color: rgb(9, 255, 173); padding-bottom: 25px; padding-top: 25px;">
+            <h1>Gallery</h1>
+        </div>
+        <div class="row all">
+            <div class="col-sm-4 img" style="padding: 0%;">
+                <img src="images/event5.jpeg">
+                <img src="images/event3.jpeg">
+                <img src="images/party2.jpeg">
+                <img src="images/event.jpeg">
+                <img src="images/birthday.jpeg">
+            </div>
+            <div class="col-sm-4 img" style="padding: 0%;">
+                <img src="images/dinning.jpeg">
+                <img src="images/party.jpeg">
+                <img src="images/event4.jpeg">
+                <img src="images/two hands.jpeg">
+                <img src="images/decoration.jpeg">
+            </div>
+            <div class="col-sm-4 img" style="padding: 0%;">
+                <img src="images/engagement.jpeg">
+                <img src="images/party3.jpeg">
+                <img src="images/event1.jpeg">
+                <img src="images/food.jpeg">
+                <img src="images/good place.jpeg">
+                <img src="images/place.jpeg">
+                <img src="images/song.jpeg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
